@@ -30,5 +30,8 @@ server.get("/search", (req, res) => {
     return res.render("search-results.html");
 })
 
+// Adaptacao pro Heroku
+const PORT = process.env.PORT || 3000;
+
 // Ligar o servidor
-server.listen(3000);
+server.listen(PORT);
