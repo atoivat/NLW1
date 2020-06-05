@@ -37,8 +37,10 @@ server.get("/search", (req, res) => {
             return console.log(err);
         }
         
+        const total = rows.length;
+
         // Mostrar a pag html com os dados do db
-        return res.render("search-results.html", { places: rows });
+        return res.render("search-results.html", { places: rows, total});
     });
 
 })
