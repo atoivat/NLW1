@@ -61,9 +61,11 @@ function handleSelectedItem(event){
 
     const itemId = itemLi.dataset.id;
 
+    console.log("ITEM-ID", itemId);
+    
     // Verificação e levantamento de itens já selecionados
     const alreadySelected = selectedItems.findIndex( item => item == itemId);
-
+    
     // Caso de item selecionado
     if(alreadySelected >= 0){
         // Retirar seleção
@@ -73,6 +75,8 @@ function handleSelectedItem(event){
         selectedItems.push(itemId);
     }
 
+    console.log("SELECTED-ITEMS", selectedItems);
+    
     // Atualização do input escondido
     collectedItems.value = selectedItems;
 }
