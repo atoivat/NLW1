@@ -10,8 +10,6 @@
 
     #page-home header a.side-button{
         position: absolute;
-        bottom: 24px;
-
         left: 50%;
         transform: translateX(-50%);
     }
@@ -41,16 +39,17 @@
         grid-template-columns: 1fr 1fr;
     }
 
-
-    @media (max-height: 500px){
-        #page-home header a.side-button {
-            height: 48px;
-            position: absolute;
-            top: 455px;
-    
-            left: 50%;
-            transform: translateX(-50%);
+    @media (min-height: 500px) {
+        #page-home header a.side-button{
+            bottom: 2rem;
         }
+    }
+    @media (max-height: 500px){
+        #page-home header a.side-button{
+            top: 28rem;
+            padding-bottom: 0.8rem;
+        }
+
     }
 }
 
@@ -73,25 +72,50 @@
     }
 
 
+    #page-home main {
+        padding: 40px 0;
+    }
+
+    #page-home main h1 {
+        font-size: 48px;
+    }
+
+    #page-home main p {
+        font-size: 18px;
+    }
+
     @media (max-height: 500px){
-        #page-home main {
-            padding: 40px 0;
-        }
-    
-        #page-home main h1 {
-            font-size: 48px;
-        }
-    
-        #page-home main p {
-            font-size: 18px;
-        }
     
         #modal form input{
             padding: 16px 8px;
             /* width: 40px; */
         }
     }
+
+    @media (min-height: 550px) {
+        #page-home header a.side-button{
+            bottom: 2rem;
+        }
+    }
+    @media (max-height: 550px){
+        #page-home header a.side-button{
+            top: 30rem;
+            padding-bottom: 0.8rem;
+        }
+    }
 }
+
+@media (max-width: 500px){
+    #page-home main h1 {
+        font-size: 36px;
+    }
+
+    #page-home main p {
+        font-size: 18px;
+    }
+}
+
+
 
 @media (max-width: 480px){
     form legend h2,
@@ -99,17 +123,13 @@
         max-width: 80%;
     }
 
-
     .items-grid {
         grid-template-columns: 1fr;
     }
+    
 }
 
 @media (max-width: 385px){
-    #page-home header a.side-button {
-        height: 36px;
-        padding: 12px 0px;
-    }
     
     #modal .content {
         max-width: 300px;
@@ -120,16 +140,33 @@
         max-width: 60%;
     }
 
-    @media (max-height: 700px){
-        #page-home header a.side-button {
-            top: 610px;
+    @media (min-height: 550px) {
+        #page-home header a.side-button{
+            bottom: 2rem;
         }
     }
+    @media (max-height: 550px){
+        #page-home header a.side-button{
+            top: 32rem;
+            padding-bottom: 0.8rem;
+        }
+    }
+}
 
-    @media (max-height: 630px){
-        #page-home header a.side-button {
-            top: 590px;
-            padding-bottom: 25px;
+@media (max-width: 330px){
+    #logo-box p {
+        font-size: 16px;
+    }
+
+    @media (min-height: 600px) {
+        #page-home header a.side-button{
+            bottom: 2rem;
+        }
+    }
+    @media (max-height: 600px){
+        #page-home header a.side-button{
+            top: 34rem;
+            padding-bottom: 0.8rem;
         }
     }
 }
