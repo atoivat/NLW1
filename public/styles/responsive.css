@@ -72,6 +72,7 @@
         flex-direction: column;
     }
 
+
     @media (max-height: 500px){
         #page-home main {
             padding: 40px 0;
@@ -92,7 +93,19 @@
     }
 }
 
-@media (max-width: 380px){
+@media (max-width: 480px){
+    form legend h2,
+    form .field-group{
+        max-width: 80%;
+    }
+
+
+    .items-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 385px){
     #page-home header a.side-button {
         height: 36px;
         padding: 12px 0px;
@@ -100,6 +113,11 @@
     
     #modal .content {
         max-width: 300px;
+    }
+
+    form legend h2,
+    form .field-group{
+        max-width: 60%;
     }
 
     @media (max-height: 700px){

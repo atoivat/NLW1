@@ -53,7 +53,6 @@ form .field {
 
 form .field-group {
     display: flex;
-
 }
 
 form input,
@@ -85,7 +84,7 @@ form .field-group .field + .field {
 }
 
 form button {
-    width: 260px;
+    max-width: 260px;
     height: 56px;
     background-color: var(--primary-color);
     border-radius: 8px;
@@ -94,7 +93,11 @@ form button {
     font-size: 16px;
     border: 0;
     margin-top: 40px;
+    padding: 30px; 
     transition: background-color 400ms;
+
+    display: flex;
+    align-items: center;
 }
 
 form button:hover {
