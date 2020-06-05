@@ -19,7 +19,7 @@
 
 #modal .content {
     color: white;
-    width: 420px;
+    max-width: 420px;
 }
 
 #modal .header {
@@ -55,6 +55,8 @@
 }
 
 #modal form input{
+    width: 100%;
+    height: 72px;
     flex: 1;
     background-color: #f0f0f5;
     border-radius: 8px 0 0 8px;
@@ -63,6 +65,7 @@
     font-size: 16px;
     color: #6c6c80;
 }
+
 
 #modal form button {
     width: 72px;

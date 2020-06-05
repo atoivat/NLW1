@@ -78,12 +78,21 @@
     #page-home main p {
         font-size: 18px;
     }
+
+    #modal form input{
+        padding: 16px 8px;
+        /* width: 40px; */
+    }
 }
 
 @media (max-width: 380px){
     #page-home header a.side-button {
         height: 36px;
         padding: 12px 0px;
+    }
+    
+    #modal .content {
+        max-width: 300px;
     }
 
     @media (max-height: 700px){
