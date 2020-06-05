@@ -66,22 +66,31 @@
     }
 }
 
-@media (max-width: 560px), (max-height: 500px){
-    #page-home main {
-        padding: 40px 0;
+@media (max-width: 560px){
+    #page-create-point #logo-box,
+    #page-search-results #logo-box {
+        flex-direction: column;
     }
+    
 
-    #page-home main h1 {
-        font-size: 48px;
-    }
 
-    #page-home main p {
-        font-size: 18px;
-    }
-
-    #modal form input{
-        padding: 16px 8px;
-        /* width: 40px; */
+    @media (max-height: 500px){
+        #page-home main {
+            padding: 40px 0;
+        }
+    
+        #page-home main h1 {
+            font-size: 48px;
+        }
+    
+        #page-home main p {
+            font-size: 18px;
+        }
+    
+        #modal form input{
+            padding: 16px 8px;
+            /* width: 40px; */
+        }
     }
 }
 
