@@ -13,6 +13,10 @@
     flex-direction: column;
 }
 
+#page-home header a.side-button {
+    margin-left: 0px;
+}
+
 #page-home header a span {
     background: url('../assets/log-in.svg');
     height: 20px;

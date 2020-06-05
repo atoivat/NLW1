@@ -71,8 +71,6 @@
     #page-search-results #logo-box {
         flex-direction: column;
     }
-    
-
 
     @media (max-height: 500px){
         #page-home main {
