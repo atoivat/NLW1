@@ -101,7 +101,7 @@
         }
     }
 
-    @media (max-height: 660px){
+    @media (max-height: 630px){
         #page-home header a.side-button {
             top: 590px;
             padding-bottom: 35px;
