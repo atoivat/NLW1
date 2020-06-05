@@ -21,27 +21,8 @@ body::after {
     margin: 0 auto;
 }
 
-#page-search-results header {
-    margin-top: 48px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#page-search-results header a {
-    color: var(--title-color);
-    font-weight: bold;
-    
-    display: flex;
-    align-items: center;
-}
 
 #page-search-results header a span {
-    width: 20px;
-    height: 24px;
-    margin-right: 16px;
-    display: flex;
-    
     background-image: url("../assets/arrow-left.svg");
 }
 
